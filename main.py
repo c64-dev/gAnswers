@@ -246,7 +246,7 @@ class Helpers:
                     file_to_save.write(decoded_image_data)
                 notification.notify(
                     title="Here is what I found.",
-                    message=text[:254] + text[254:],
+                    message=text,
                     app_icon=resIcon,
                 )
             except IndexError:
@@ -257,13 +257,13 @@ class Helpers:
                 open(resIcon, "wb").write(r.content)
                 notification.notify(
                     title="Here is what I found.",
-                    message=text[:254] + text[254:],
+                    message=text,
                     app_icon=resIcon,
                 )
         else:
             notification.notify(
                 title="Here is what I found.",
-                message=text[:254] + text[254:],
+                message=text,
                 app_icon=defIcon,
             )
 
