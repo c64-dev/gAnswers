@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+#
+# Name: gAnswers - v1.0
+# Author: Nick L (c64-dev@github)
+# 
+# A voice controlled desktop assistant providing answers to
+# various queries, by scraping Google's webpage results and 
+# reformatting it as a notification snippet for the user.
+
 
 import os
 import sys
